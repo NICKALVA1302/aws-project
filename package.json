@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.25",
+    "@graphql-tools/utils": "^10.9.1",
+    "express": "^5.1.0",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.10.1",
+    "graphql-tools": "^9.0.20",
+    "mongoose": "^8.19.2",
+    "rimraf": "^6.0.1"
+  },
+  "name": "practica_graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "build": "babel src -d dist --sourcemaps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.5",
+    "nodemon": "^3.1.10"
+  }
+}
